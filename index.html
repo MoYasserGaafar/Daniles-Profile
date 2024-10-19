@@ -1,0 +1,905 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+    Specifies the character encoding as UTF-8, allowing for displaying various languages and characters.
+    Controls how the page is displayed on different devices and ensures that the page adapts to various screen sizes and adjusts the initial zoom level. 
+    -->
+    <title>Daniels</title>
+
+    <!-- Google Fonts >> Poppins and Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect">: Preconnects to Google Fonts servers for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <!-- Bootstrap >> CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Bootstrap >> Javascript -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body data-spy="scroll" data-target="#navbarNav" data-offset="70">
+    <!-- ========================= Navbar ========================= -->
+    <!-- Bottsrap >> Docs >> Components >> Navbar --> <!-- Scrollspy @ Bootstrap >> <nav> -->
+    <nav style="padding: 5px;" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">DANIELS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div style="justify-content: space-around;" class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> <!-- Added <ms-auto> instead of <me-auto> -->
+                    <li class="nav-item"> <!-- 1st <li> >> Home -->
+                        <a class="nav-link active" aria-current="page" href="#header">Home</a>
+                    </li>
+                    <li class="nav-item"> <!-- 2nd <li> >> About -->
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item"> <!-- 3rd <li> >> Services -->
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item"> <!-- 4th <li> >> Portfolio -->
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item"> <!-- 5th <li> >> Testimonials -->
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item"> <!-- 6th <li> >> Team -->
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item"> <!-- 7th <li> >> Contact -->
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ========================= ****** ========================= -->
+
+    <!-- ========================= Header ========================= -->
+    <section id="header" class="d-flex justify-content-center align-items-center">
+        <!-- ===== <header> Section >> header-txt ===== -->
+        <div class="header-txt text-white text-center">
+            <h4>Hello</h4>
+            <h2 class="fw-lighter d-flex justify-content-center align-items-center">
+                I am <div class="header-txt-info"></div>
+            </h2>
+
+            <!-- >>>>> header-txt-icons @ header-txt <<<<< -->
+            <ul class="header-txt-icons d-flex justify-content-center align-items-center">
+                <li>
+                    <a href="#" class="d-flex justify-content-center align-items-center">
+                        <i class="fa-brands fa-facebook-f"></i> <!-- Font Awesome icon for Facebook -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex justify-content-center align-items-center">
+                        <i class="fa-brands fa-twitter"></i> <!-- Font Awesome icon for Twitter -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex justify-content-center align-items-center">
+                        <i class="fa-brands fa-linkedin-in"></i> <!-- Font Awesome icon for LinkedIn -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex justify-content-center align-items-center">
+                        <i class="fa-brands fa-behance"></i> <!-- Font Awesome icon for Behance -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex justify-content-center align-items-center">
+                        <i class="fa-brands fa-youtube"></i> <!-- Font Awesome icon for YouTube -->
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- ========================= ****** ========================= -->
+
+    <!-- ========================= About ========================= -->
+    <section id="about" class="py-5">
+        <div class="container"> <!-- ===== <about> Section >> container ===== -->
+            <div class="row"> <!-- about >> container >> row (12 cols) -->
+
+                <!-- >>>>> img >> 5 cols out of 12 cols in large screens <<<<< -->
+                <div class="col-lg-5">
+                    <div class="about-img position-relative z-2">
+                        <img src="images/about.jpg" alt="" class="w-100">
+                    </div>
+                </div>
+
+                <!-- >>>>> info >> 7 cols out of 12 cols in large screens <<<<< -->
+                <div class="col-lg-7">
+                    <div class="about-info">
+                        <h3 class="fw-bold h2">About Me</h3>
+                        <p class="subtitle">UI / UX DESIGNER & WEB DEVELOPER</p>
+                        <p class="text-muted my-3">I am <span class="fw-bold">Jerry Daniels</span> Lorem Ipsum is simply
+                            dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                            standard dummy text ever It has survived not only five centuries, but also the leap into
+                            electronic but also the leap into electronic typesetting, remaining essentially unchanged.
+                            It was popularised in the 1960s with the release of Letraset sheets containing</p>
+
+                        <!-- ===== Bootstrap >> Docs >> Components >> Progress ===== -->
+                        <div class="about-info-skills my-3">
+                            <!-- >>>>> 1st Progress Bar: Web Design <<<<< -->
+                            <div class="progress mb-3" role="progressbar" aria-label="Example with label"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 95%">
+                                    <div class="progress-content d-flex justify-content-between px-2">
+                                        <span>Web Design</span>
+                                        <span>95%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- >>>>> 2nd Progress Bar: Branding <<<<< -->
+                            <div class="progress mb-3" role="progressbar" aria-label="Example with label"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 80%">
+                                    <div class="progress-content d-flex justify-content-between px-2">
+                                        <span>Branding</span>
+                                        <span>80%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- >>>>> 3rd Progress Bar: Development <<<<< -->
+                            <div class="progress mb-3" role="progressbar" aria-label="Example with label"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 90%">
+                                    <div class="progress-content d-flex justify-content-between px-2">
+                                        <span>Development</span>
+                                        <span>90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-info-buttons py-4">
+                            <button class="btn btn-lg btn-custom-black"><a href="./docs/Mohamed-Yasser.pdf"
+                                    download="./docs/Mohamed-Yasser.pdf">Download CV</a></button>
+                            <button class="btn btn-lg btn-custom-white mx-1"><a href="#contact">Contact Me</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================= ***** ========================= -->
+
+    <!-- ========================= Services ========================= -->
+    <section id="services" class="py-5 bg-gray">
+        <!-- ===== Title of <services> Section ===== -->
+        <div class="title text-center">
+            <h2 class="section-title">Services</h2>
+        </div>
+
+        <!-- ===== Items of <services> Section ===== -->
+        <div class="container">
+            <div class="row mt-5">
+                <!-- >>>>> 1st Item out of 6 <<<<< -->
+                <div class="col-lg-4">
+                    <div class="item d-flex flex-column justify-content-center align-items-center text-center p-4 rounded-3">
+                        <div class="item-icons d-flex justify-content-center align-items-center rounded-circle my-4">
+                            <i class="fa-solid fa-laptop"></i> <!-- Font Awesome icon for Laptop -->
+                        </div>
+                        <h6>Web Design</h6>
+                        <p class="text-muted">Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever</p>
+                    </div>
+                </div>
+    
+                <!-- >>>>> 2nd Item out of 6 <<<<< -->
+                <div class="col-lg-4">
+                    <div class="item d-flex flex-column justify-content-center align-items-center text-center p-4 rounded-3">
+                        <div class="item-icons d-flex justify-content-center align-items-center rounded-circle my-4">
+                            <i class="fa-solid fa-bullhorn"></i> <!-- Font Awesome icon for Bullhorn-->
+                        </div>
+                        <h6>Branding</h6>
+                        <p class="text-muted">Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever</p>
+                    </div>
+                </div>
+    
+                <!-- >>>>> 3rd Item out of 6 <<<<< -->
+                <div class="col-lg-4">
+                    <div class="item d-flex flex-column justify-content-center align-items-center text-center p-4 rounded-3">
+                        <div class="item-icons d-flex justify-content-center align-items-center rounded-circle my-4">
+                            <i class="fa-solid fa-umbrella"></i> <!-- Font Awesome icon for Umbrella -->
+                        </div>
+                        <h6>Development</h6>
+                        <p class="text-muted">Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever</p>
+                    </div>
+                </div>
+
+                <!-- >>>>> 4th Item out of 6 <<<<< -->
+                <div class="col-lg-4">
+                    <div class="item d-flex flex-column justify-content-center align-items-center text-center p-4 rounded-3">
+                        <div class="item-icons d-flex justify-content-center align-items-center rounded-circle my-4">
+                            <i class="fa-solid fa-diamond"></i> <!-- Font Awesome icon for Diamond -->
+                        </div>
+                        <h6>Creative Design</h6>
+                        <p class="text-muted">Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever</p>
+                    </div>
+                </div>
+
+                <!-- >>>>> 5th Item out of 6 <<<<< -->
+                <div class="col-lg-4">
+                    <div class="item d-flex flex-column justify-content-center align-items-center text-center p-4 rounded-3">
+                        <div class="item-icons d-flex justify-content-center align-items-center rounded-circle my-4">
+                            <i class="fa-solid fa-television"></i> <!-- Font Awesome icon for Television -->
+                        </div>
+                        <h6>Fully Responsive</h6>
+                        <p class="text-muted">Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever</p>
+                    </div>
+                </div>
+
+                <!-- >>>>> 6th Item out of 6 <<<<< -->
+                <div class="col-lg-4">
+                    <div class="item d-flex flex-column justify-content-center align-items-center text-center p-4 rounded-3">
+                        <div class="item-icons d-flex justify-content-center align-items-center rounded-circle my-4">
+                            <i class="fa-solid fa-camera"></i> <!-- Font Awesome icon for Camera -->
+                        </div>
+                        <h6>Retina Ready</h6>
+                        <p class="text-muted">Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- ========================= ******** ========================= -->
+
+    <!-- ========================= Portfolio ========================= -->
+    <section id="portfolio" class="py-5">
+        <!-- ===== Title of <portfolio> Section ===== -->
+        <div class="title text-center">
+            <h2 class="section-title">Portfolio</h2>
+        </div>
+
+        <!-- ===== Navbar of <portfolio> Section ===== -->
+        <!-- ===== Bottsrap >> Docs >> Components >> Navs & tabs >> Javascript behavior ===== -->
+        <ul class="nav nav-tabs py-5" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation"> <!-- >>>>> 1st Tab: All <<<<< -->
+                <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-tab-pane"
+                    type="button" role="tab" aria-controls="all-tab-pane" aria-selected="true">All</button>
+            </li>
+            <li class="nav-item" role="presentation"> <!-- >>>>> 2nd Tab: Brand <<<<< -->
+                <button class="nav-link" id="brand-tab" data-bs-toggle="tab" data-bs-target="#brand-tab-pane"
+                    type="button" role="tab" aria-controls="brand-tab-pane" aria-selected="false">Brand</button>
+            </li>
+            <li class="nav-item" role="presentation"> <!-- >>>>> 3rd Tab: Design <<<<< -->
+                <button class="nav-link" id="design-tab" data-bs-toggle="tab" data-bs-target="#design-tab-pane"
+                    type="button" role="tab" aria-controls="design-tab-pane" aria-selected="false">Design</button>
+            </li>
+            <li class="nav-item" role="presentation"> <!-- >>>>> 4th Tab: Graphic <<<<< -->
+                <button class="nav-link" id="graphic-tab" data-bs-toggle="tab" data-bs-target="#graphic-tab-pane"
+                    type="button" role="tab" aria-controls="graphic-tab-pane" aria-selected="false">Graphic</button>
+            </li>
+        </ul>
+
+        <!-- ===== Layout of <portfolio> Section ===== -->
+        <div class="tab-content" id="myTabContent">
+            <!-- >>>>> 1st Tab: Home <<<<< -->
+            <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel" aria-labelledby="all-tab" tabindex="0">
+                <div class="container">
+                    <div class="row g-4"> <!-- row >> 12 cols -->
+                        <!-- >>>>> 1st 4 cols: 4 cols out of 12 cols in large screens = 33.33% of the screen <<<<< -->
+                        <div class="col-lg-4">
+                            <div class="item position-relative overflow-hidden text-white border-0 shadow-sm">
+                                <img src="images/1.jpg" alt="" class="w-100">
+                                <div
+                                    class="item-layer position-absolute d-flex justify-content-center align-items-center flex-column">
+                                    <h6 class="text-dark">Web Design</h6>
+                                    <div class="item-layer-icons d-flex justify-content-center align-items-center">
+                                        <a href="#"><i class="fa-solid fa-link"></i></a> <!-- Font Awesome icon for Link -->
+                                        <button><i class="fa-solid fa-magnifying-glass"></i></button> <!-- Font Awesome icon for Magnifying Glass -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- >>>>> 2nd 4 cols: 4 cols out of 12 cols in large screens = 33.33% of the screen <<<<< -->
+                        <div class="col-lg-4">
+                            <div class="item position-relative overflow-hidden text-white border-0 shadow-sm">
+                                <img src="images/2.jpg" alt="" class="w-100">
+                                <div
+                                    class="item-layer position-absolute d-flex justify-content-center align-items-center flex-column">
+                                    <h6 class="text-dark">Web Design</h6>
+                                    <div class="item-layer-icons d-flex justify-content-center align-items-center">
+                                        <a href="#"><i class="fa-solid fa-link"></i></a> <!-- Font Awesome icon for Link -->
+                                        <button><i class="fa-solid fa-magnifying-glass"></i></button> <!-- Font Awesome icon for Magnifying Glass -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- >>>>> 3rd 4 cols: 4 cols out of 12 cols in large screens = 33.33% of the screen <<<<< -->
+                        <div class="col-lg-4">
+                            <div class="item position-relative overflow-hidden text-white border-0 shadow-sm">
+                                <img src="images/3.jpg" alt="" class="w-100">
+                                <div
+                                    class="item-layer position-absolute d-flex justify-content-center align-items-center flex-column">
+                                    <h6 class="text-dark">Web Design</h6>
+                                    <div class="item-layer-icons d-flex justify-content-center align-items-center">
+                                        <a href="#"><i class="fa-solid fa-link"></i></a> <!-- Font Awesome icon for Link -->
+                                        <button><i class="fa-solid fa-magnifying-glass"></i></button> <!-- Font Awesome icon for Magnifying Glass -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- >>>>> 4th 4 cols: 4 cols out of 12 cols in large screens = 33.33% of the screen <<<<< -->
+                        <div class="col-lg-4">
+                            <div class="item position-relative overflow-hidden text-white border-0 shadow-sm">
+                                <img src="images/4.jpg" alt="" class="w-100">
+                                <div
+                                    class="item-layer position-absolute d-flex justify-content-center align-items-center flex-column">
+                                    <h6 class="text-dark">Web Design</h6>
+                                    <div class="item-layer-icons d-flex justify-content-center align-items-center">
+                                        <a href="#"><i class="fa-solid fa-link"></i></a> <!-- Font Awesome icon for Link -->
+                                        <button><i class="fa-solid fa-magnifying-glass"></i></button> <!-- Font Awesome icon for Magnifying Glass -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- >>>>> 5th 4 cols: 4 cols out of 12 cols in large screens = 33.33% of the screen <<<<< -->
+                        <div class="col-lg-4">
+                            <div class="item position-relative overflow-hidden text-white border-0 shadow-sm">
+                                <img src="images/5.jpg" alt="" class="w-100">
+                                <div
+                                    class="item-layer position-absolute d-flex justify-content-center align-items-center flex-column">
+                                    <h6 class="text-dark">Web Design</h6>
+                                    <div class="item-layer-icons d-flex justify-content-center align-items-center">
+                                        <a href="#"><i class="fa-solid fa-link"></i></a> <!-- Font Awesome icon for Link -->
+                                        <button><i class="fa-solid fa-magnifying-glass"></i></button> <!-- Font Awesome icon for Magnifying Glass -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- >>>>> 6th 4 cols: 4 cols out of 12 cols in large screens = 33.33% of the screen <<<<< -->
+                        <div class="col-lg-4">
+                            <div class="item position-relative overflow-hidden text-white border-0 shadow-sm">
+                                <img src="images/6.jpg" alt="" class="w-100">
+                                <div
+                                    class="item-layer position-absolute d-flex justify-content-center align-items-center flex-column">
+                                    <h6 class="text-dark">Web Design</h6>
+                                    <div class="item-layer-icons d-flex justify-content-center align-items-center">
+                                        <a href="#"><i class="fa-solid fa-link"></i></a> <!-- Font Awesome icon for Link -->
+                                        <button><i class="fa-solid fa-magnifying-glass"></i></button> <!-- Font Awesome icon for Magnifying Glass -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- >>>>> 2nd Tab: Brand <<<<< -->
+            <div class="tab-pane fade" id="brand-tab-pane" role="tabpanel" aria-labelledby="brand-tab" tabindex="0">
+                <div class="container">
+                    <div class="row g-4"> <!-- row >> 12 cols -->
+                        <!-- >>>>> 1st 4 cols: 4 cols out of 12 cols in large screens = 33.33% of the screen <<<<< -->
+                        <div class="col-lg-4">
+                            <div class="item position-relative overflow-hidden text-white border-0 shadow-sm">
+                                <img src="images/1.jpg" alt="" class="w-100">
+                                <div
+                                    class="item-layer position-absolute d-flex justify-content-center align-items-center flex-column">
+                                    <h6 class="text-dark">Web Design</h6>
+                                    <div class="item-layer-icons d-flex justify-content-center align-items-center">
+                                        <a href="#"><i class="fa-solid fa-link"></i></a> <!-- Font Awesome icon for Link -->
+                                        <button><i class="fa-solid fa-magnifying-glass"></i></button> <!-- Font Awesome icon for Magnifying Glass -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- >>>>> 2nd 4 cols: 4 cols out of 12 cols in large screens = 33.33% of the screen <<<<< -->
+                        <div class="col-lg-4">
+                            <div class="item position-relative overflow-hidden text-white border-0 shadow-sm">
+                                <img src="images/2.jpg" alt="" class="w-100">
+                                <div
+                                    class="item-layer position-absolute d-flex justify-content-center align-items-center flex-column">
+                                    <h6 class="text-dark">Web Design</h6>
+                                    <div class="item-layer-icons d-flex justify-content-center align-items-center">
+                                        <a href="#"><i class="fa-solid fa-link"></i></a> <!-- Font Awesome icon for Link -->
+                                        <button><i class="fa-solid fa-magnifying-glass"></i></button> <!-- Font Awesome icon for Magnifying Glass -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- >>>>> 3rd 4 cols: 4 cols out of 12 cols in large screens = 33.33% of the screen <<<<< -->
+                        <div class="col-lg-4">
+                            <div class="item position-relative overflow-hidden text-white border-0 shadow-sm">
+                                <img src="images/3.jpg" alt="" class="w-100">
+                                <div
+                                    class="item-layer position-absolute d-flex justify-content-center align-items-center flex-column">
+                                    <h6 class="text-dark">Web Design</h6>
+                                    <div class="item-layer-icons d-flex justify-content-center align-items-center">
+                                        <a href="#"><i class="fa-solid fa-link"></i></a> <!-- Font Awesome icon for Link -->
+                                        <button><i class="fa-solid fa-magnifying-glass"></i></button> <!-- Font Awesome icon for Magnifying Glass -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- >>>>> 4th 4 cols: 4 cols out of 12 cols in large screens = 33.33% of the screen <<<<< -->
+                        <div class="col-lg-4">
+                            <div class="item position-relative overflow-hidden text-white border-0 shadow-sm">
+                                <img src="images/4.jpg" alt="" class="w-100">
+                                <div
+                                    class="item-layer position-absolute d-flex justify-content-center align-items-center flex-column">
+                                    <h6 class="text-dark">Web Design</h6>
+                                    <div class="item-layer-icons d-flex justify-content-center align-items-center">
+                                        <a href="#"><i class="fa-solid fa-link"></i></a> <!-- Font Awesome icon for Link -->
+                                        <button><i class="fa-solid fa-magnifying-glass"></i></button> <!-- Font Awesome icon for Magnifying Glass -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- >>>>> 3rd Tab: Design <<<<< -->
+            <div class="tab-pane fade" id="design-tab-pane" role="tabpanel" aria-labelledby="design-tab" tabindex="0">
+                <div class="container">
+                    <div class="row g-4"> <!-- row >> 12 cols -->
+                        <!-- >>>>> 1st 4 cols: 4 cols out of 12 cols in large screens = 33.33% of the screen <<<<< -->
+                        <div class="col-lg-4">
+                            <div class="item position-relative overflow-hidden text-white border-0 shadow-sm">
+                                <img src="images/3.jpg" alt="" class="w-100">
+                                <div
+                                    class="item-layer position-absolute d-flex justify-content-center align-items-center flex-column">
+                                    <h6 class="text-dark">Web Design</h6>
+                                    <div class="item-layer-icons d-flex justify-content-center align-items-center">
+                                        <a href="#"><i class="fa-solid fa-link"></i></a> <!-- Font Awesome icon for Link -->
+                                        <button><i class="fa-solid fa-magnifying-glass"></i></button> <!-- Font Awesome icon for Magnifying Glass -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- >>>>> 2nd 4 cols: 4 cols out of 12 cols in large screens = 33.33% of the screen <<<<< -->
+                        <div class="col-lg-4">
+                            <div class="item position-relative overflow-hidden text-white border-0 shadow-sm">
+                                <img src="images/4.jpg" alt="" class="w-100">
+                                <div
+                                    class="item-layer position-absolute d-flex justify-content-center align-items-center flex-column">
+                                    <h6 class="text-dark">Web Design</h6>
+                                    <div class="item-layer-icons d-flex justify-content-center align-items-center">
+                                        <a href="#"><i class="fa-solid fa-link"></i></a> <!-- Font Awesome icon for Link -->
+                                        <button><i class="fa-solid fa-magnifying-glass"></i></button> <!-- Font Awesome icon for Magnifying Glass -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- >>>>> 3rd 4 cols: 4 cols out of 12 cols in large screens = 33.33% of the screen <<<<< -->
+                        <div class="col-lg-4">
+                            <div class="item position-relative overflow-hidden text-white border-0 shadow-sm">
+                                <img src="images/5.jpg" alt="" class="w-100">
+                                <div
+                                    class="item-layer position-absolute d-flex justify-content-center align-items-center flex-column">
+                                    <h6 class="text-dark">Web Design</h6>
+                                    <div class="item-layer-icons d-flex justify-content-center align-items-center">
+                                        <a href="#"><i class="fa-solid fa-link"></i></a> <!-- Font Awesome icon for Link -->
+                                        <button><i class="fa-solid fa-magnifying-glass"></i></button> <!-- Font Awesome icon for Magnifying Glass -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- >>>>> 4th 4 cols: 4 cols out of 12 cols in large screens = 33.33% of the screen <<<<< -->
+                        <div class="col-lg-4">
+                            <div class="item position-relative overflow-hidden text-white border-0 shadow-sm">
+                                <img src="images/6.jpg" alt="" class="w-100">
+                                <div
+                                    class="item-layer position-absolute d-flex justify-content-center align-items-center flex-column">
+                                    <h6 class="text-dark">Web Design</h6>
+                                    <div class="item-layer-icons d-flex justify-content-center align-items-center">
+                                        <a href="#"><i class="fa-solid fa-link"></i></a> <!-- Font Awesome icon for Link -->
+                                        <button><i class="fa-solid fa-magnifying-glass"></i></button> <!-- Font Awesome icon for Magnifying Glass -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- >>>>> 4th Tab: Graphic <<<<< -->
+            <div class="tab-pane fade" id="graphic-tab-pane" role="tabpanel" aria-labelledby="graphic-tab" tabindex="0">
+                <div class="container">
+                    <div class="row g-4"> <!-- row >> 12 cols -->
+                        <!-- >>>>> 1st 4 cols: 4 cols out of 12 cols in large screens = 33.33% of the screen <<<<< -->
+                        <div class="col-lg-4">
+                            <div class="item position-relative overflow-hidden text-white border-0 shadow-sm">
+                                <img src="images/1.jpg" alt="" class="w-100">
+                                <div
+                                    class="item-layer position-absolute d-flex justify-content-center align-items-center flex-column">
+                                    <h6 class="text-dark">Web Design</h6>
+                                    <div class="item-layer-icons d-flex justify-content-center align-items-center">
+                                        <a href="#"><i class="fa-solid fa-link"></i></a> <!-- Font Awesome icon for Link -->
+                                        <button><i class="fa-solid fa-magnifying-glass"></i></button> <!-- Font Awesome icon for Magnifying Glass -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- >>>>> 2nd 4 cols: 4 cols out of 12 cols in large screens = 33.33% of the screen <<<<< -->
+                        <div class="col-lg-4">
+                            <div class="item position-relative overflow-hidden text-white border-0 shadow-sm">
+                                <img src="images/2.jpg" alt="" class="w-100">
+                                <div
+                                    class="item-layer position-absolute d-flex justify-content-center align-items-center flex-column">
+                                    <h6 class="text-dark">Web Design</h6>
+                                    <div class="item-layer-icons d-flex justify-content-center align-items-center">
+                                        <a href="#"><i class="fa-solid fa-link"></i></a> <!-- Font Awesome icon for Link -->
+                                        <button><i class="fa-solid fa-magnifying-glass"></i></button> <!-- Font Awesome icon for Magnifying Glass -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- >>>>> 3rd 4 cols: 4 cols out of 12 cols in large screens = 33.33% of the screen <<<<< -->
+                        <div class="col-lg-4">
+                            <div class="item position-relative overflow-hidden text-white border-0 shadow-sm">
+                                <img src="images/5.jpg" alt="" class="w-100">
+                                <div
+                                    class="item-layer position-absolute d-flex justify-content-center align-items-center flex-column">
+                                    <h6 class="text-dark">Web Design</h6>
+                                    <div class="item-layer-icons d-flex justify-content-center align-items-center">
+                                        <a href="#"><i class="fa-solid fa-link"></i></a> <!-- Font Awesome icon for Link -->
+                                        <button><i class="fa-solid fa-magnifying-glass"></i></button> <!-- Font Awesome icon for Magnifying Glass -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- >>>>> 4th 4 cols: 4 cols out of 12 cols in large screens = 33.33% of the screen <<<<< -->
+                        <div class="col-lg-4">
+                            <div class="item position-relative overflow-hidden text-white border-0 shadow-sm">
+                                <img src="images/6.jpg" alt="" class="w-100">
+                                <div
+                                    class="item-layer position-absolute d-flex justify-content-center align-items-center flex-column">
+                                    <h6 class="text-dark">Web Design</h6>
+                                    <div class="item-layer-icons d-flex justify-content-center align-items-center">
+                                        <a href="#"><i class="fa-solid fa-link"></i></a> <!-- Font Awesome icon for Link -->
+                                        <button><i class="fa-solid fa-magnifying-glass"></i></button> <!-- Font Awesome icon for Magnifying Glass -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========================= ********* ========================= -->
+
+    <!-- ========================= Testimonials ========================= -->
+    <section id="testimonials" class="py-5 bg-gray">
+        <!-- ===== Title of <testiminials> Section ===== -->
+        <div class="title text-center">
+            <h2 class="section-title">Testimonials</h2>
+        </div>
+
+        <!-- ===== Carousel of <testiminials> Section ===== -->
+        <!-- ===== Bootstrap >> Docs >> Components >> Carousel ===== -->
+        <div id="carouselExampleIndicators" class="carousel slide mx-auto">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <!-- >>>>> 1st Item out of 3 <<<<< -->
+                <div class="carousel-item active">
+                    <!-- ===== static slider for dynamic carousel ===== -->
+                    <div class="slider d-flex justify-content-center align-items-center text-center mb-5 flex-column">
+                        <img src="images/testi-1.jpg" alt=""
+                            class="py-4 rounded-circle d-block mx-auto img-fluid img-custom">
+                        <blockquote class="text-secondary mt-4 fs-6">
+                            Lorem Ipsum has been the industry's standard dummy text ever since the when an <br>
+                            unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </blockquote>
+                        <p class=" fw-bold m-0 fs-5">Alex Smith</p>
+                        <span class="text-secondary">Envato Customer</span>
+                    </div>
+                </div>
+
+                <!-- >>>>> 2nd Item out of 3 <<<<< -->
+                <div class="carousel-item">
+                    <div class="slider d-flex justify-content-center align-items-center mb-5 flex-column">
+                        <img src="images/testi-1.jpg" alt=""
+                            class="py-4 rounded-circle d-block mx-auto img-fluid img-custom">
+                        <blockquote class="text-secondary mt-4 fs-6">
+                            Lorem Ipsum has been the industry's standard dummy text ever since the when an <br>
+                            unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </blockquote>
+                        <p class=" fw-bold m-0 fs-5">Alex Smith</p>
+                        <span class="text-secondary">Envato Customer</span>
+                    </div>
+                </div>
+
+                <!-- >>>>> 3rd Item out of 3 <<<<< -->
+                <div class="carousel-item">
+                    <div class="slider d-flex justify-content-center align-items-center mb-5 flex-column">
+                        <img src="images/testi-1.jpg" alt=""
+                            class="py-4 rounded-circle d-block mx-auto img-fluid img-custom">
+                        <blockquote class="text-secondary mt-4 fs-6">
+                            Lorem Ipsum has been the industry's standard dummy text ever since the when an <br>
+                            unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </blockquote>
+                        <p class=" fw-bold m-0 fs-5">Alex Smith</p>
+                        <span class="text-secondary">Envato Customer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========================= ************ ========================= -->
+
+    <!-- ========================= Statistics ========================= -->
+    <div class="statistics m-auto mt-5 mb-5 bg-white">
+        <div class="container text-center">
+            <div class="row"> <!-- row >> 12 cols -->
+                <!-- >>>>> 1st 4 cols: 4 cols out of 12 cols in large screens = 25% of the screen <<<<< -->
+                <div class="col-lg-3">
+                    <div class="item">
+                        <div class="item-icons d-flex justify-content-center align-items-center rounded-circle my-4">
+                            <i class="fa-solid fa-users fs-2"></i> <!-- Font Awesome icon for Users -->
+                        </div>
+                        <h3 class="fw-bold fs-2">850</h3>
+                        <p class="text-muted">Customers</p>
+                    </div>
+                </div>
+        
+                <!-- >>>>> 2nd 4 cols: 4 cols out of 12 cols in large screens = 25% of the screen <<<<< -->
+                <div class="col-lg-3">
+                    <div class="item">
+                        <div class="item-icons d-flex justify-content-center align-items-center rounded-circle my-4">
+                            <i class="fa-solid fa-thumbs-up fs-2"></i> <!-- Font Awesome icon for Thumbs -->
+                        </div>
+                        <h3 class="fw-bold fs-2">230</h3>
+                        <p class="text-muted">Complete Projects</p>
+                    </div>
+                </div>
+        
+                <!-- >>>>> 3rd 4 cols: 4 cols out of 12 cols in large screens = 25% of the screen <<<<< -->
+                <div class="col-lg-3">
+                    <div class="item">
+                        <div class="item-icons d-flex justify-content-center align-items-center rounded-circle my-4">
+                            <i class="fa-solid fa-bullhorn fs-2"></i> <!-- Font Awesome icon Bullhorn -->
+                        </div>
+                        <h3 class="fw-bold fs-2">9450</h3>
+                        <p class="text-muted">Lines of Codes</p>
+                    </div>
+                </div>
+        
+                <!-- >>>>> 4th 4 cols: 4 cols out of 12 cols in large screens = 25% of the screen <<<<< -->
+                <div class="col-lg-3">
+                    <div class="item">
+                        <div class="item-icons d-flex justify-content-center align-items-center rounded-circle my-4">
+                            <i class="fa-solid fa-cloud-download fs-2"></i> <!-- Font Awesome icon for Cloud Download -->
+                        </div>
+                        <h3 class="fw-bold fs-2">780</h3>
+                        <p class="text-muted">Files Downloaded</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ========================= ********** ========================= -->
+
+    <!-- ========================= Team ========================= -->
+    <section id="team" class="py-5 bg-gray">
+        <!-- ===== Title of <team> Section ===== -->
+        <div class="title text-center">
+            <h2 class="section-title">Our Team</h2>
+        </div>
+
+        <!-- ===== Cards of <team> Section ===== -->
+        <div class="container">
+            <div class="row mt-5"> <!-- row >> 12 cols -->
+                <!-- >>>>> 1st 4 cols: 4 cols out of 12 cols in large screens = 33.33% of the screen <<<<< -->
+                <div class="col-lg-4">
+                    <!-- Bootsrap >> Docs >> Components >> Card -->
+                    <div class="card p-2 border-0 rounded-top-0">
+                        <div class="card-img position-relative overflow-hidden rounded-0">
+                            <img src="images/team-1.jpg" class="card-img-top rounded-0" alt="...">
+
+                            <div class="card-layer position-absolute d-flex justify-content-center align-items-center">
+                                <div class="card-layer-icons d-flex justify-content-center align-items-center m-2">
+                                    <i class="fa-brands fa-linkedin-in fa-flip-horizontal"></i> <!-- Font Awesome icon for LinkedIn >> 4th Icon -->
+                                </div>
+                                <div class="card-layer-icons d-flex justify-content-center align-items-center m-2">
+                                    <i class="fa-brands fa-pinterest fa-flip-horizontal"></i> <!-- Font Awesome icon for Pinterest >> 3rd Icon -->
+                                </div>
+                                <div class="card-layer-icons d-flex justify-content-center align-items-center m-2">
+                                    <i class="fa-brands fa-twitter fa-flip-horizontal"></i> <!-- Font Awesome icon for Twitter >> 2nd Icon -->
+                                </div>
+                                <div class="card-layer-icons d-flex justify-content-center align-items-center m-2">
+                                    <i class="fa-brands fa-facebook fa-flip-horizontal"></i> <!-- Font Awesome icon for Facebook >> 1st Icon -->
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="card-body text-center bg-secondary text-white">
+                            <h4>John Doe</h4>
+                            <h5 class="fw-bold">FRONT-END DEVELOPER</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- >>>>> 2nd 4 cols: 4 cols out of 12 cols in large screens = 33.33% of the screen <<<<< -->
+                <div class="col-lg-4">
+                    <!-- Bootsrap >> Docs >> Components >> Card -->
+                    <div class="card p-2 border-0 rounded-top-0">
+                        <div class="card-img position-relative overflow-hidden rounded-0">
+                            <img src="images/team-2.jpg" class="card-img-top rounded-0" alt="...">
+
+                            <div class="card-layer position-absolute d-flex justify-content-center align-items-center">
+                                <div class="card-layer-icons d-flex justify-content-center align-items-center m-2">
+                                    <i class="fa-brands fa-linkedin-in fa-flip-horizontal"></i> <!-- Font Awesome icon for LinkedIn >> 4th Icon -->
+                                </div>
+                                <div class="card-layer-icons d-flex justify-content-center align-items-center m-2">
+                                    <i class="fa-brands fa-pinterest fa-flip-horizontal"></i> <!-- Font Awesome icon for Pinterest >> 3rd Icon -->
+                                </div>
+                                <div class="card-layer-icons d-flex justify-content-center align-items-center m-2">
+                                    <i class="fa-brands fa-twitter fa-flip-horizontal"></i> <!-- Font Awesome icon for Twitter >> 2nd Icon -->
+                                </div>
+                                <div class="card-layer-icons d-flex justify-content-center align-items-center m-2">
+                                    <i class="fa-brands fa-facebook fa-flip-horizontal"></i> <!-- Font Awesome icon for Facebook >> 1st Icon -->
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="card-body text-center bg-secondary text-white">
+                            <h4>Dave Wood</h4>
+                            <h5 class="fw-bold">BACK-END DEVELOPER</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- >>>>> 3rd 4 cols: 4 cols out of 12 cols in large screens = 33.33% of the screen <<<<< -->
+                <div class="col-lg-4">
+                    <!-- Bootsrap >> Docs >> Components >> Card -->
+                    <div class="card p-2 border-0 rounded-top-0">
+                        <div class="card-img position-relative overflow-hidden rounded-0">
+                            <img src="images/team-1.jpg" class="card-img-top rounded-0" alt="...">
+
+                            <div class="card-layer position-absolute d-flex justify-content-center align-items-center">
+                                <div class="card-layer-icons d-flex justify-content-center align-items-center m-2">
+                                    <i class="fa-brands fa-linkedin-in fa-flip-horizontal"></i> <!-- Font Awesome icon for LinkedIn >> 4th Icon -->
+                                </div>
+                                <div class="card-layer-icons d-flex justify-content-center align-items-center m-2">
+                                    <i class="fa-brands fa-pinterest fa-flip-horizontal"></i> <!-- Font Awesome icon for Pinterest >> 3rd Icon -->
+                                </div>
+                                <div class="card-layer-icons d-flex justify-content-center align-items-center m-2">
+                                    <i class="fa-brands fa-twitter fa-flip-horizontal"></i> <!-- Font Awesome icon for Twitter >> 2nd Icon -->
+                                </div>
+                                <div class="card-layer-icons d-flex justify-content-center align-items-center m-2">
+                                    <i class="fa-brands fa-facebook fa-flip-horizontal"></i> <!-- Font Awesome icon for Facebook >> 1st Icon -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-body text-center bg-secondary text-white">
+                            <h4>Clarie Ched</h4>
+                            <h5 class="fw-bold">FRONT-END DEVELOPER</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========================= **** ========================= -->
+
+    <!-- ========================= Contact ========================= -->
+    <section id="contact" class="py-5">
+        <!-- ===== Title of <contact> Section ===== -->
+        <div class="title text-center">
+            <h2 class="section-title">Contact Us</h2>
+        </div>
+
+        <!-- ===== Items of <contact> Section ===== -->
+        <div class="contact-info">
+            <div class="row mt-5"> <!-- row >> 12 cols -->
+                <!-- >>>>> 1st 4 cols: 4 cols out of 12 cols in large screens = 33.33% of the screen <<<<< -->
+                <div class="col-lg-4">
+                    <div class="item text-center">
+                        <div class="item-icon d-flex justify-content-center align-items-center m-auto mb-4">
+                            <i class="fa-solid fa-location-dot fs-4"></i> <!-- Font Awesome icon for Location -->
+                        </div>
+                        <h6 class="fw-bold">Address</h6>
+                        <p class="text-muted">6834 Hollywood Blvd - Los Angeles CA</p>
+                    </div>
+                </div>
+
+                <!-- >>>>> 2nd 4 cols: 4 cols out of 12 cols in large screens = 33.33% of the screen <<<<< -->
+                <div class="col-lg-4">
+                    <div class="item text-center">
+                        <div class="item-icon d-flex justify-content-center align-items-center m-auto mb-4">
+                            <i class="fa-solid fa-envelope fs-4"></i> <!-- Font Awesome icon for Email -->
+                        </div>
+                        <h6 class="fw-bold">Email</h6>
+                        <p class="text-muted">support@website.com</p>
+                    </div>
+                </div>
+
+                <!-- >>>>> 3rd 4 cols: 4 cols out of 12 cols in large screens = 33.33% of the screen <<<<< -->
+                <div class="col-lg-4">
+                    <div class="item text-center">
+                        <div class="item-icon d-flex justify-content-center align-items-center m-auto mb-4">
+                            <i class="fa-solid fa-phone fs-4"></i> <!-- Font Awesome icon for Phone -->
+                        </div>
+                        <h6 class="fw-bold">Phone</h6>
+                        <p class="text-muted">+1 (312) 555-9208</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== Forms of <contact> Section ===== -->
+        <div class="contact-form">
+            <form action="">
+                <div class="row mt-5"> <!-- row >> 12 cols -->
+                    <!-- >>>>> 1st 4 cols: 6 cols out of 12 cols in large screens = 50%% of the screen <<<<< -->
+                    <div class="col-lg-6 mb-3">
+                        <input class="form-control" type="text" placeholder="Name">
+                    </div>
+
+                    <!-- >>>>> 2nd 4 cols: 6 cols out of 12 cols in large screens = 50% of the screen <<<<< -->
+                    <div class="col-lg-6 mb-3">
+                        <input class="form-control" type="text" placeholder="Email">
+                    </div>
+
+                    <!-- >>>>> 3rd 4 cols: 12 cols out of 12 cols in large screens = 100% of the screen <<<<< -->
+                    <div class="col-lg-12 mb-3">
+                        <textarea class="form-control my-3" placeholder="Message"></textarea>
+                    </div>
+                </div>
+
+                <button class="btn btn-dark">Submit</button>
+            </form>
+        </div>
+    </section>
+    <!-- ========================= ******* ========================= -->
+
+    <!-- Bootstrap JavaScript and Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Activate Scrollspy -->
+    <script> $('body').scrollspy({ target: '#navbarNav', offset: 70 }); </script>
+</body>
+
+</html>

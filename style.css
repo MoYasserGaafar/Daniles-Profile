@@ -1,0 +1,438 @@
+*{
+    scroll-behavior: smooth;
+    scroll-padding: 50px;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat", sans-serif;
+}
+
+:root{
+    --main-color: rgb(28, 28, 28);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ========== Title @ Section ========== */
+.section-title{
+    text-align: center;
+    margin: auto;
+    font-size: 40px;
+    font-weight: 900;
+    position: relative;
+    text-transform: capitalize;
+    width: fit-content;  
+    z-index: 1;
+}
+
+.section-title::after{
+    content: "";
+    position: absolute;
+    width: 100%; height: 50%;
+    left: 0px; bottom: 0px;
+    background: url("images/dots.png") repeat;
+    z-index: -1;
+}
+
+/* ========== Background @ Section ========== */
+.bg-gray{
+    background: #f7f7f7;
+}
+
+/* ========================= Navbar ========================= */
+.navbar-brand{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #343434;
+}
+
+.nav-item{
+    font-size: 16px;
+    text-transform: capitalize;
+    padding-inline: 12px;
+}
+
+.nav-link.active::after {
+    content: "";
+    position: absolute;
+    background-color: #343434;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+    transition: 0.2s ease;
+}
+
+.nav-link.active::after{
+    width: 100%;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 0px;
+    color: #111111;
+    position: relative;
+}
+/* ========================= ****** ========================= */
+
+/* ========================= Header ========================= */
+#header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("images/header-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+#header .header-txt{
+    flex-direction: column;
+}
+
+#header .header-txt h4{
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+#header .header-txt h2{
+    font-size: 60px;
+    font-weight: 200;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    gap:10px;
+}
+
+#header .header-txt-icons{
+    margin-top: 30px;
+    gap: 5px;
+}
+
+#header .header-txt-icons a{
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    font-size: 14px;
+}
+
+#header .header-txt-info{
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 400;
+    transition: 0.2s ease;
+    animation: change-width 6s 1s infinite;
+}
+
+#header .header-txt-info::after{
+    content: 'Larry Daniels';
+    animation: change-word 6s 1s infinite ease;
+}
+
+@keyframes change-width{
+    0%, 30%, 60%, 100%{
+        width: 100%;
+        padding-right: 8px;
+    }
+
+    15%, 45%, 75%{
+        width: 0%;
+        padding-right: 0px;
+    }
+}
+
+@keyframes change-word{
+    0%, 100%{
+        content: 'Larry Daniels';
+    }
+    30%{
+        content: 'Developer';
+    }
+    60%{
+        content: 'Designer';
+    }
+}
+/* ========================= ****** ========================= */
+
+/* ========================= About ========================= */
+/* ========== Image @ About ========== */
+#about .about-img{
+    padding-left: 30px;
+}
+
+#about .about-img::after{
+    content: "";
+    position: absolute;
+    width: 80%; height: 80%;
+    left: 0px; bottom: -30px;
+    background-image: url("images/dots.png");
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+/* ========== Info @ About ========== */
+#about h3{
+    color: #1c1c1c;
+}
+
+#about .subtitle{
+    letter-spacing: 4px;
+}
+
+/* Info >> Progress @ About */
+#about .progress{
+    height: 30px;
+}
+
+#about .progress-bar{
+    background-color: #1c1c1c;
+}
+
+/* Transition Effect >> Buttons >> Info @ About */
+#about .btn-custom-black a{
+    color: white;
+    font-size: 14px;
+}
+
+#about .btn-custom-black{
+    background-color: #1c1c1c;
+    transition: all .3s;
+}
+
+#about .btn-custom-black:hover{
+    background-color: white;
+    border: #1c1c1c 1px solid;
+}
+
+#about .btn-custom-black:hover a{
+    color: #1c1c1c;
+}
+
+#about .btn-custom-white a{
+    color: #1c1c1c;
+    font-size: 15px;
+}
+
+#about .btn-custom-white{
+    border: #1c1c1c 1px solid;
+}
+
+#about .btn-custom-white:hover{
+    background-color: #1c1c1c;
+}
+
+#about .btn-custom-white:hover a{
+    color: #fff;
+}
+/* ========================= ***** ========================= */
+
+/* ========================= Services ========================= */
+#services .item{
+    padding: 50px 20px;
+    background-color: #fff;
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+#services .item-icons{
+    background-color: #eee;
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    transition: 0.4s ease;
+}
+
+#services .item:hover .item-icons{
+    background-color: #1c1c1c;
+    color: #eee;
+}
+
+#services .item h6{
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+#services .item p{
+    word-spacing: 2px;
+    font-size: 14px;
+}
+/* ========================= ******** ========================= */
+
+/* ========================= Portfolio ========================= */
+/* ========== Navbar @ Portfolio ========== */
+#portfolio .nav-tabs{
+    border: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+#portfolio .nav-tabs .nav-link{
+    border-color: transparent;
+    color: #222;
+    font-weight: 700;
+    padding: 0px;
+    position: relative;
+    text-transform: capitalize;
+}
+
+/* ========== Layout @ Portfolio ========== */
+#portfolio .item-layer{
+    inset: 10px 5px 5px;
+    background-color: #fffa;
+    gap: 10px;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+#portfolio .item-layer h6{
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#portfolio .item-layer-icons>*{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px; height: 35px;
+    border-radius: 50%;
+    background-color: #343434;
+    color: #fff;
+    outline: none;
+    border: none;
+}
+
+#portfolio .item-layer-icons{
+    gap: 10px;
+}
+
+/* Transition Effect >> Layer >> Item @ Portfolio */
+#portfolio .item-layer>*{
+    transition: 0.5 ease;
+}
+
+#portfolio .item:hover .item-layer{
+    opacity: 1;
+}
+
+#portfolio .item:hover .item-layer>*{
+    margin: 0;
+}
+/* ========================= ********* ========================= */
+
+/* ========================= Testimonials ========================= */
+#testimonials .carousel-indicators [data-bs-target]{
+    all: unset;
+    width: 10px; height: 10px;
+    margin-inline: 6px;
+    border-radius: 50%;
+    background-color: #ddd;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#testimonials .carousel-indicators .active{
+    opacity: 1;
+}
+
+#testimonials .img-custom{
+    width: 100px;
+}
+/* ========================= ************ ========================= */
+
+/* ========================= Team ========================= */
+#team .card-layer{
+    background-color: white;
+    top: 5px; bottom: 5px;
+    right: 5px; left: 5px;
+    opacity: 0;
+    transition: 0.5s all;
+}
+
+#team .card-layer-icons{
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    border: 1px solid #1c1c1c;
+    background-color: #1c1c1c;
+    color: #fff;
+    transition: 0.5s all;
+}
+
+#team .card-img img{
+    transition: 0.5s scale;
+}
+
+/* Transition Effect >> Layer >> Card @ Team */
+#team .card-layer-icons:hover{
+    background-color: #fff;
+    color: #1c1c1c;
+}
+
+#team .card:hover .card-layer{
+    transform: rotateY(180deg);
+    opacity: 1;
+}
+
+#team .card-img:hover img{
+    scale: 1.1;
+}
+/* ========================= **** ========================= */
+
+/* ========================= Contact ========================= */
+#contact .contact-info{
+    width: 70%;
+    margin: auto;
+}
+
+#contact .contact-form{
+    width: 70%;
+    margin: auto;
+}
+
+#contact .item-icon{
+    width: 70px; height: 70px;
+    border-radius: 50%;
+    background-color: #eee;
+    transition: 0.5s all;
+}
+
+/* Transition Effect >> Item @ Contact */
+#contact .item:hover .item-icon{
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+#contact .contact-form .btn:hover{
+    background-color: #fff;
+    color: #1c1c1c;
+}
+
+#contact .form-control{
+    border: none;
+    background-color: #eee;
+}
+
+#contact .form-control:focus{
+    box-shadow: none;
+    background-color: #eee;
+}
+/* ========================= ******* ========================= */
